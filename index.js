@@ -263,3 +263,20 @@ function shuffle(array){
 }
 
 cards.forEach(card=>console.log(card));
+
+
+let usrerName = "Sujal";
+let userAge = 20;
+login();
+
+function login(){
+displayUser();
+displayAge();
+
+    function displayUser(){
+        console.log(`Username is ${usrerName}`);
+    }
+    function displayAge(){
+        console.log(`Age is ${userAge}`);
+    }
+}
