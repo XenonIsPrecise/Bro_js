@@ -267,6 +267,9 @@ cards.forEach(card=>console.log(card));
 
 let usrerName = "Sujal";
 let userAge = 20;
+
+
+// Nested functions
 login();
 
 function login(){
@@ -280,3 +283,15 @@ displayAge();
         console.log(`Age is ${userAge}`);
     }
 }
+
+const store = new Map([['name','Sujal'],['age',20],['country','Canada'],['university','Centennial']]);
+store.forEach((value,key)=>console.log(`${key} = ${value}`));
+//Create a map with 5 key-value pairs of items and their prices and print all the keys and values of the map using forEach function.
+const store2 = new Map([['apple',1.99],['banana',2.99],['orange',3.99],['mango',4.99],['grapes',5.99]]);
+store2.forEach((value,key)=>console.log(`${key} = ${value}`));
+let shoppingCart = 0;
+
+shoppingCart+=store2.get('apple');
+shoppingCart+=store2.get('banana');
+
+console.log(shoppingCart);
