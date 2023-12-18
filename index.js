@@ -284,7 +284,10 @@ displayAge();
     }
 }
 
-const store = new Map([['name','Sujal'],['age',20],['country','Canada'],['university','Centennial']]);
+const store = new Map([['name','Sujal'],
+['age',20],
+['country','Canada'],
+['university','Centennial']]);
 store.forEach((value,key)=>console.log(`${key} = ${value}`));
 //Create a map with 5 key-value pairs of items and their prices and print all the keys and values of the map using forEach function.
 const store2 = new Map([['apple',1.99],['banana',2.99],['orange',3.99],['mango',4.99],['grapes',5.99]]);
@@ -295,3 +298,89 @@ shoppingCart+=store2.get('apple');
 shoppingCart+=store2.get('banana');
 
 console.log(shoppingCart);
+
+
+const student = {
+    Name : "Sujal",
+    Age : 20,
+    Country : "Canada",
+    University : "Centennial",
+
+    isStudying : function(){
+        console.log("Student is studying");
+    },
+    notStudying : function(){
+        console.log("Student is not studying");}
+
+}
+student.isStudying();
+student.notStudying();
+
+
+class Player{
+    score =0;
+    name = "Sujal";
+    username = "XenonIsPrecise";
+
+    pause(){
+        console.log("Game Paused");
+    }
+}
+const Player1 = new Player();
+console.log(Player1.score);
+Player1.pause();
+
+//write a program to create star shaped pattern.
+let star = "";
+for(let i=0;i<5;i++)
+{
+    star+="*";
+    console.log(star);
+}
+
+// try {
+//     let x = window.prompt("Enter the value of pi: ");
+//     x = Number(x);
+
+//     if(isNaN(x)) throw "It is not a number";
+//     if (x == "") throw "Donot type blank";
+
+//     console.log(`${x} is a number`);
+    
+// } catch (error) {
+//     throw "Something is wrong";
+    
+// }
+
+let timer1=setTimeout(firstFunction, 3000);
+let timer2=setTimeout(secondFunction, 6000);
+let timer3=setTimeout(thirdFunction, 7000);
+
+let moneymoney = 499.99;
+let moneyname = "Crypto";
+
+function firstFunction(name,price){
+    alert(`By this ${moneyname}for $${moneymoney} dollars`)
+}
+
+function secondFunction(){
+    alert("I am telling you, this is not a scam!!!")
+}
+
+function thirdFunction(){
+    alert("Just do it man!!!")
+}
+
+document.getElementById("scamButton").onclick = function (){
+    clearTimeout(timer1);
+    clearTimeout(timer2);
+    clearTimeout(timer3);
+    alert("Haha Fooled you")
+
+}
+
+
+
+
+
+
